@@ -29,16 +29,6 @@ Open the address printed in the terminal, usually [http://127.0.0.1:4174/](http:
 
 For development checks, run `npm test` and `npm run build`.
 
-## Publish on GitHub Pages
-
-This project includes a GitHub Actions workflow for building and hosting the site. For first-time Git commands and local checks, see the [GitHub Pages guide](docs/github-pages.md):
-
-1. Create a GitHub repository and push this project to its `main` branch, including `.github/workflows/pages.yml` and the package lockfile.
-2. In the repository, open **Settings → Pages** and select **GitHub Actions** as the build and deployment source.
-3. After the workflow succeeds, open the Pages URL shown in the deployment or repository settings. A project site normally uses `https://<owner>.github.io/<repository>/`.
-
-The workflow determines the deployment base path from the repository name. Future pushes to `main` rebuild and deploy the site. If the first workflow ran before Pages was configured, rerun it from the repository’s **Actions** tab.
-
 ## Sources and further reading
 
 - [TI TIDM-02014 traction inverter reference design](https://www.ti.com/lit/ug/tiduf23/tiduf23.pdf)
