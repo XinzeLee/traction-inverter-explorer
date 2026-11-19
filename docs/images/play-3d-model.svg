@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="64" viewBox="0 0 320 64" role="img" aria-labelledby="title">
+  <title id="title">Play the 3D model</title>
+  <rect x="0" y="0" width="320" height="64" rx="8" fill="#117766"/>
+  <circle cx="36" cy="32" r="16" fill="#ffffff" fill-opacity=".16"/>
+  <path d="M32 22.5v19l14-9.5z" fill="#ffffff"/>
+  <text x="65" y="39" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">Play the 3D model</text>
+</svg>

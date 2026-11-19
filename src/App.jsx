@@ -40,7 +40,7 @@ export default function App() {
         <button className={!vehicle && exploded ? 'primary' : ''} onClick={() => {setVehicle(false);setExploded(vehicle ? true : !exploded);setIsolate(false);}} aria-pressed={!vehicle && exploded}><Layers3 size={17}/><span>{vehicle ? 'Inverter detail' : exploded ? 'Exploded view' : 'Assembled view'}</span></button>
         <button className="reset" onClick={reset} aria-label="Reset view"><RotateCcw size={17}/><span>Reset</span></button>
       </div>
-      <a className="header-repo" href={REPOSITORY_URL} target="_blank" rel="noopener noreferrer" aria-label="GitHub repository" title="GitHub repository"><Github size={20}/></a>
+      <a className="header-repo" href={REPOSITORY_URL} target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub" title="View source code on GitHub"><Github size={20}/></a>
     </header>
     <main className="workspace">
       <aside className="parts-panel">
