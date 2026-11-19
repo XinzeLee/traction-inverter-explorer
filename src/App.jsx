@@ -3,8 +3,7 @@ import { Box, CarFront, RotateCcw, Layers3, MousePointer2, ChevronRight, Crossha
 import Viewer from './Viewer.jsx';
 import { visualReferences } from './references.js';
 
-// Replace this placeholder with the repository URL when it is published.
-const REPOSITORY_URL = 'https://github.com/XinzeLee';
+const REPOSITORY_URL = 'https://github.com/XinzeLee/traction-inverter-explorer';
 const CREATOR_URL = 'https://github.com/XinzeLee';
 
 const systemInverter = { id:'sys-inverter', name:'Traction inverter', category:'Traction drive', description:'The traction inverter converts DC from the high-voltage battery to three-phase AC for the motor. In a regenerative operating mode, the power path can also run back toward the battery.' };
@@ -41,7 +40,7 @@ export default function App() {
         <button className={!vehicle && exploded ? 'primary' : ''} onClick={() => {setVehicle(false);setExploded(vehicle ? true : !exploded);setIsolate(false);}} aria-pressed={!vehicle && exploded}><Layers3 size={17}/><span>{vehicle ? 'Inverter detail' : exploded ? 'Exploded view' : 'Assembled view'}</span></button>
         <button className="reset" onClick={reset} aria-label="Reset view"><RotateCcw size={17}/><span>Reset</span></button>
       </div>
-      <a className="header-repo" href={REPOSITORY_URL} target="_blank" rel="noopener noreferrer" aria-label="GitHub repository (placeholder)" title="GitHub repository (placeholder)"><Github size={20}/></a>
+      <a className="header-repo" href={REPOSITORY_URL} target="_blank" rel="noopener noreferrer" aria-label="GitHub repository" title="GitHub repository"><Github size={20}/></a>
     </header>
     <main className="workspace">
       <aside className="parts-panel">

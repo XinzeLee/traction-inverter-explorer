@@ -2,9 +2,11 @@
 
 Explore how a traction inverter fits into a battery electric vehicle and how its power-electronics hardware is assembled. This interactive model connects the inverter’s internal components to the surrounding vehicle power system.
 
+[![Explore the 3D model](https://img.shields.io/badge/Explore%20the%203D%20model-Launch%20explorer-1d75bc?style=for-the-badge)](https://xinzelee.github.io/traction-inverter-explorer/)
+
 ## Explore the 3D model
 
-![The traction inverter explorer with an exploded 3D assembly and component details](docs/images/inverter-explorer.jpg)
+[![The traction inverter explorer with an exploded 3D assembly and component details](docs/images/inverter-explorer.jpg)](https://xinzelee.github.io/traction-inverter-explorer/)
 
 Rotate and zoom the conceptual three-phase traction inverter, select components, and switch between assembled and exploded views. Isolate the DC-link capacitors, busbars, power modules, gate drivers, control board, current sensors, connections, enclosure, and liquid-cooled cold plate to learn their roles.
 
@@ -35,7 +37,7 @@ This project includes a GitHub Actions workflow for building and hosting the sit
 2. In the repository, open **Settings → Pages** and select **GitHub Actions** as the build and deployment source.
 3. After the workflow succeeds, open the Pages URL shown in the deployment or repository settings. A project site normally uses `https://<owner>.github.io/<repository>/`.
 
-The workflow determines the deployment base path from the repository name. Future pushes to `main` rebuild and deploy the site. If the first workflow ran before Pages was configured, rerun it from the repository’s **Actions** tab. The GitHub icon in `src/App.jsx` currently points to the author’s profile as a placeholder; replace `REPOSITORY_URL` with the actual repository URL when it is available.
+The workflow determines the deployment base path from the repository name. Future pushes to `main` rebuild and deploy the site. If the first workflow ran before Pages was configured, rerun it from the repository’s **Actions** tab.
 
 ## Sources and further reading
 
