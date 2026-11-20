@@ -35,6 +35,7 @@ jobs:
       - name: Build the site
         env:
           PAGES_BASE_PATH: ${{ vars.PAGES_BASE_PATH }}
+          VITE_COUNTER_API_URL: ${{ vars.VITE_COUNTER_API_URL }}
         shell: bash
         run: |
           repo="${GITHUB_REPOSITORY#*/}"

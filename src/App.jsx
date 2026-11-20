@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { Box, CarFront, RotateCcw, Layers3, MousePointer2, ChevronRight, Crosshair, Info, Github, ArrowRight } from 'lucide-react';
 import Viewer from './Viewer.jsx';
+import CommunityCounter from './CommunityCounter.jsx';
 import { visualReferences } from './references.js';
 
 const REPOSITORY_URL = 'https://github.com/XinzeLee/traction-inverter-explorer';
@@ -61,6 +62,6 @@ export default function App() {
         <div className="source-links"><span>{vehicle ? 'SYSTEM REFERENCES' : 'VISUAL REFERENCES'}</span>{(vehicle ? systemSources : (visualReferences[selected] || [])).map(source => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>)}</div><div className="inspector-foot"><Info size={15}/><p>{vehicle ? 'Conceptual layout. Locations are illustrative; wired and wireless charging are alternative paths.' : 'Reference-informed teaching model. The assembly combines features from several products; geometry and ratings are illustrative.'}</p></div>
       </aside>
     </main>
-    <footer className="footer"><span>POWER ELECTRONICS <b> / </b> ELECTRIC VEHICLES</span><span>{vehicle ? 'Illustrative vehicle architecture and optional charging paths' : 'Conceptual two-level, three-phase inverter'}</span><a className="creator-credit" href={CREATOR_URL} target="_blank" rel="noopener noreferrer">Created by Xinze Li</a></footer>
+    <footer className="footer"><span>POWER ELECTRONICS <b> / </b> ELECTRIC VEHICLES</span><span className="footer-description">{vehicle ? 'Illustrative vehicle architecture and optional charging paths' : 'Conceptual two-level, three-phase inverter'}</span><div className="footer-right"><CommunityCounter/><a className="creator-credit" href={CREATOR_URL} target="_blank" rel="noopener noreferrer">Created by Xinze Li</a></div></footer>
   </div>
 }
