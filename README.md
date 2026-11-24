@@ -1,5 +1,14 @@
 # Explore an Electric Vehicle Traction Inverter in 3D
 
+
+<!-- clone-stats:start -->
+<p align="center">
+  <a href="https://github.com/XinzeLee/traction-inverter-explorer/graphs/traffic"><img src="https://img.shields.io/badge/Total_Clones-pending-7c3aed?style=flat-square" alt="Total tracked repository clones: pending" /></a>
+  <a href="https://github.com/XinzeLee/traction-inverter-explorer/graphs/traffic"><img src="https://img.shields.io/badge/Unique_Clones-pending-b45309?style=flat-square" alt="Unique repository cloners: pending" /></a>
+</p>
+<p align="center"><sub>GitHub traffic · awaiting first update</sub></p>
+<!-- clone-stats:end -->
+
 Explore how a traction inverter fits into a battery electric vehicle and how its power-electronics hardware is assembled. This interactive model connects the inverter’s internal components to the surrounding vehicle power system.
 
 ## Explore the 3D model

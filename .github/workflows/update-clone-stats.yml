@@ -1,0 +1,38 @@
+name: Update clone statistics
+
+on:
+  schedule:
+    - cron: '17 6 * * 2'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: clone-statistics
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: 24
+          package-manager-cache: false
+      - name: Collect clone statistics
+        env:
+          TRAFFIC_STATS_TOKEN: ${{ secrets.TRAFFIC_STATS_TOKEN }}
+        run: node scripts/update-clone-stats.mjs
+      - name: Commit updated statistics
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md .github/clone-history.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update clone statistics'
+            git push
+          fi
